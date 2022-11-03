@@ -27,6 +27,7 @@ public class MusicController {
         return new ResponseEntity<>(musicService.getAllMusic(),HttpStatus.FOUND);
     }
 
+
     @GetMapping("/getmusicbyid/{trackId}")
     public ResponseEntity<?> getMusicByTrackId(@PathVariable int trackId){
         return new ResponseEntity<>(musicService.getMusicByTrackId(trackId),HttpStatus.FOUND);
